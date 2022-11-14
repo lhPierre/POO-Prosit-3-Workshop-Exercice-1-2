@@ -19,6 +19,7 @@ void Stockage::ajouterObjet(Objet2D* obj, int index)
 {
 	this->liste[index] = obj;
 }
+
 void Stockage::afficherInfos()
 {
 	for (int i = 0; i < nb_elements_liste; i++)

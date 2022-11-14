@@ -7,6 +7,7 @@ class Objet2D
 protected:
 	int dim1; // Longueur 
 	int dim2; // Largeur
+	Objet2D* next;
 	void ini_obj(int, int);
 public:
 	Objet2D(void);
@@ -14,6 +15,8 @@ public:
 	virtual int getPerimetre() = 0;
 	virtual int getAire() = 0;
 	virtual std::string afficherInfo() = 0;
+	void setNext(Objet2D*);
+	Objet2D* getNext();
 };
 
 class Rectangle : public Objet2D
